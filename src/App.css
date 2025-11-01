@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+}
+h3 {
+  margin: 20px 0;
+  text-align: right;
+  color: red;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: black;
+}
+.count-area {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 16px;
+  background-color: rgb(234, 234, 234);
+  font-size: 32px;
+  font-weight: bold;
+  text-align: right;
+}
+.btn-area {
+  width: 50%;
+  margin: 10% auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.btn-area button {
+  background-color: orange;
+  text-align: center;
+  padding: 25px;
+  font-size: 32px;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  main {
+    width: 300px;
+    height: 300px;
+  }
+  .btn-area button {
+    font-size: 24px;
+    padding: 20px;
+  }
+}
